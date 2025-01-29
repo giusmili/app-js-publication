@@ -3,7 +3,7 @@
     const version = Number(11);
     let timeValue = document.querySelector("time")
     let dates = new Date()
-    timeValue.setAttribute("datetime", dates.toLocaleString('en-US', { timeZone: 'UTC' }))
+    timeValue.setAttribute("datetime", dates.toLocaleString('en-EN', { timeZone: 'UTC' }))
     timeValue.innerText += dates.getFullYear()
 
     
