@@ -1,6 +1,13 @@
 (()=>{
     let firstName = String(`Hello ça va?`);
     const version = Number(11);
+    let timeValue = document.querySelector("time")
+    let dates = new Date()
+    timeValue.setAttribute("datetime", dates.toLocaleString('en-US', { timeZone: 'UTC' }))
+    timeValue.innerText += dates.getFullYear()
+
+    
+  
     /* document.children[0].setAttribute("lang","fr") */
     /* console.log(document.children[0]) */
    
@@ -50,4 +57,4 @@
 
     })
 
-})()
+})() 
